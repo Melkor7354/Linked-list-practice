@@ -8,7 +8,7 @@ class Randomness:
         self.start = start
         self.end = end
 
-    def random(self=True):
+    def random(self=None):
         root = int(time.time()//1)
         for i in range(16):
             new = (root ^ (root >> 1)) & 1
